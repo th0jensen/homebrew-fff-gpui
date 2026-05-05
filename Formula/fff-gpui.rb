@@ -6,12 +6,12 @@ class FffGpui < Formula
   depends_on :macos
 
   on_arm do
-    url "https://github.com/th0jensen/fff-gpui/releases/download/v0.1.5/fff-gpui-arm64"
+    url "https://github.com/th0jensen/fff-gpui/releases/download/v0.1.5/fff-gpui-macos-arm64"
     sha256 "e393e5367a1c771579a4f190979a39b341e68fb5adc194a301a57d6c0822a383"
   end
 
   on_intel do
-    url "https://github.com/th0jensen/fff-gpui/releases/download/v0.1.5/fff-gpui-universal"
+    url "https://github.com/th0jensen/fff-gpui/releases/download/v0.1.5/fff-gpui-macos-universal"
     sha256 "dd8094fbbf697e3d05bea6e29c1e23bd26aa03994ebddc8f17f78f026ce606b3"
   end
 
