@@ -7,12 +7,12 @@ class FffGpui < Formula
 
   on_arm do
     url "https://github.com/th0jensen/fff-gpui/releases/download/v0.1.5/fff-gpui-macos-arm64"
-    sha256 "e393e5367a1c771579a4f190979a39b341e68fb5adc194a301a57d6c0822a383"
+    sha256 "0278c284c9e99fe2caf1943e4fe6f77316776e6f52cbf4526d220157d74a9cd3"
   end
 
   on_intel do
     url "https://github.com/th0jensen/fff-gpui/releases/download/v0.1.5/fff-gpui-macos-universal"
-    sha256 "dd8094fbbf697e3d05bea6e29c1e23bd26aa03994ebddc8f17f78f026ce606b3"
+    sha256 "56ad85e9ac5215f772fe68dc248c1e3d1ee5e17d9e7c5ba818c201986eb9f86f"
   end
 
   def install
