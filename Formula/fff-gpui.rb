@@ -2,17 +2,17 @@ class FffGpui < Formula
   desc "System-wide file finder for macOS built on GPUI, with Zed integration"
   homepage "https://github.com/th0jensen/fff-gpui"
   license "MIT"
-  version "0.1.6"
+  version "0.1.7"
   depends_on :macos
 
   on_arm do
-    url "https://github.com/th0jensen/fff-gpui/releases/download/v0.1.6/fff-gpui-macos-arm64"
-    sha256 "6be1fa2d7d2761eac369abbada9c8c1d6d2e31f5ce18b6c0d8c95556d128be4a"
+    url "https://github.com/th0jensen/fff-gpui/releases/download/v0.1.7/fff-gpui-macos-arm64"
+    sha256 "dd083b4e7986e6745a6fd59ca5d98ddbc864de1ea2d30929c4f1fa3d56e7ec28"
   end
 
   on_intel do
-    url "https://github.com/th0jensen/fff-gpui/releases/download/v0.1.6/fff-gpui-macos-universal"
-    sha256 "5eda310d7264054bc83ff3468880b1cf78a7ab932e5bf5e8b8d4dde2970a3e4d"
+    url "https://github.com/th0jensen/fff-gpui/releases/download/v0.1.7/fff-gpui-macos-universal"
+    sha256 "15f7395b41aec7541f1fd75dbe032ee1f033164a76815d0c6889261f5ec259ba"
   end
 
   def install
