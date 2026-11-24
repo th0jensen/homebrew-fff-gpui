@@ -17,12 +17,11 @@ class FffGpuiPr < Formula
     mv bin/"fff-gpui", bin/"fff-gpui-pr"
   end
 
-  service do
-    run [opt_bin/"fff-gpui-pr"]
-    keep_alive true
-    run_at_load true
-    log_path "#{Dir.home}/Library/Logs/fff-gpui-pr/fff-gpui-pr.log"
-    error_log_path "#{Dir.home}/Library/Logs/fff-gpui-pr/fff-gpui-pr.log"
+  def caveats
+    <<~EOS
+      To start fff-gpui at login and whenever something connects to its socket:
+        fff-gpui-pr daemon install
+    EOS
   end
 
   test do

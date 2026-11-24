@@ -4,14 +4,14 @@
 
 ```sh
 brew install fff-gpui
-brew services start fff-gpui
+fff-gpui daemon install
 ```
 
 ## Tip (latest master, built from source)
 
 ```sh
 brew install --HEAD th0jensen/fff-gpui/fff-gpui-tip
-brew services start fff-gpui-tip
+fff-gpui-tip daemon install
 ```
 
 Rebuild:
@@ -32,10 +32,11 @@ Rebuild a different PR:
 HOMEBREW_FFF_GPUI_PR=456 brew reinstall --HEAD th0jensen/fff-gpui/fff-gpui-pr
 ```
 
-Tip and PR binaries are named `fff-gpui-tip` / `fff-gpui-pr` and use separate
-services/log paths, so they can run alongside the stable daemon. Stop the stable
-daemon first if you want to avoid port or socket conflicts:
+Tip and PR binaries are named `fff-gpui-tip` / `fff-gpui-pr`, but every channel
+uses the same socket and LaunchAgent, so only one daemon can run at a time.
+`daemon install` from one channel replaces the LaunchAgent of another. To go back
+to stable:
 
 ```sh
-brew services stop fff-gpui
+fff-gpui daemon install
 ```
